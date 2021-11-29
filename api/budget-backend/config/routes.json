@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/budget-backends",
+      "handler": "budget-backend.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/budget-backends/count",
+      "handler": "budget-backend.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/budget-backends/:id",
+      "handler": "budget-backend.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/budget-backends",
+      "handler": "budget-backend.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/budget-backends/:id",
+      "handler": "budget-backend.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/budget-backends/:id",
+      "handler": "budget-backend.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

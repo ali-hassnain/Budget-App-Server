@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "budget_backends",
+  "info": {
+    "name": "BudgetBackend",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Budget": {
+      "type": "integer"
+    },
+    "categories": {
+      "via": "budget_backend",
+      "collection": "category"
+    }
+  }
+}
